@@ -1,0 +1,16 @@
+.grid-container td {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.grid-container tr:nth-of-type(n) {
+    background-color: #f5e6bf;
+}
+.grid-container tr:nth-of-type(2n) td:nth-of-type(2n){
+    background-color: #66443a;
+}
+.grid-container tr:nth-of-type(2n-1) td:nth-of-type(2n-1){
+    background-color: #66443a;
+}
+
