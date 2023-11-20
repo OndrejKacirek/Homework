@@ -1,0 +1,180 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    border: 3px #4fb57c solid;
+    border-radius: 5px;
+    user-select: none;
+}
+
+input[type=text] {
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    border: 3px #4fb57c solid;
+    user-select: none;
+}
+
+input[type=text]::placeholder {
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=number] {
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    border: 3px #4fb57c solid;
+    user-select: none;
+}
+
+input[type=number]::placeholder {
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=number] {
+    appearance: textfield;
+    user-select: none;
+}
+
+input[type="radio"]:checked {
+    padding-left: 10px;
+    outline: blue 4px solid;
+    background-color: white;
+    user-select: none;
+}
+
+.remove-margin-bottom {
+    margin-bottom: 0;
+}
+
+.radio-container {
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 35px;
+    cursor: pointer;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.radio-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 50%;
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-container input:checked~.checkmark {
+    background-color: #4fb57c;
+}
+
+.radio-container input:checked~.checkmark::after {
+    display: block;
+    background-color: white;
+}
+
+.radio-container .checkmark::after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+/* Checkbox style */
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 35px;
+    cursor: pointer;
+}
+
+.checkbox-container .checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 2px;
+}
+
+.checkbox-container .checkbox::after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background: white;
+}
+
+.checkbox-container input:checked~.checkbox {
+    background-color: #4fb57c;
+}
+
+.checkbox::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked~.checkbox::after {
+    display: block;
+    background-color: white;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.submit-button {
+    appearance: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: #4fb57c;
+    font-weight: bolder;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 50px;
+}
+
+.submit-button:text .submit-button:hover {
+    background-color: green;
+}

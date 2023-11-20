@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulář</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>TV dotazník</h1>
+    <form action="" method="post">
+
+        <h4 class="remove-margin-bottom">Jméno</h4>
+        <input type="text" name="jmeno" placeholder="Napište jméno..." required>
+        <h4 class="remove-margin-bottom">Přijmení</h4>
+        <input type="text" name="jmeno" placeholder="Napište přijmení..." required>
+
+        <h4 class="remove-margin-bottom">Kolik vám je let?</h4>
+
+        <label class="radio-container">
+            <input type="radio" name="vek" value="18" autocomplete="off" required> 18 a méně <br>
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="radio-container">
+            <input type="radio" name="vek" value="19" autocomplete="off" required> 19 až 64 <br>
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="radio-container">
+            <input type="radio" name="vek" value="65" autocomplete="off" required> 65 a více<br>
+            <span class="checkmark"></span>
+        </label>
+
+        <h4 class="remove-margin-bottom">Na jakých zařízeních sledujete TV?</h4 class="remove-margin-bottom">
+        <label class="checkbox-container">
+            <input type="checkbox" name="tv[]" value="Televize" autocomplete="off"> Televize<br>
+            <span class="checkbox"></span>
+        </label>
+        <label class="checkbox-container">
+            <input type="checkbox" name="tv[]" value="Poočítač" autocomplete="off"> Poočítač<br>
+            <span class="checkbox"></span>
+        </label>
+        <label class="checkbox-container">
+            <input type="checkbox" name="tv[]" value="Mobil" autocomplete="off"> Mobil<br>
+            <span class="checkbox"></span>
+        </label>
+
+
+        <h4 class="remove-margin-bottom">Co se vám líbí na TV?</h4>
+        <textarea name="libi" rows="4" cols="50" required></textarea>
+
+        <h4 class="remove-margin-bottom">Jakou výšku poplatků jste ochotni platit</h4>
+        <input type="number" placeholder="Kč" min="0" autocomplete="off" required>
+
+        <div class="button-container">
+            <input type="submit" value="Odeslat" class="submit-button">
+        </div>
+
+    </form>
+</body>
+
+</html>
